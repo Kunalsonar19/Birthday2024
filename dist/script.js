@@ -3,7 +3,7 @@ $(".start").click(function () {
   fire_modal(
     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cake_modal.png",
     "Let’s make a cake!",
-    "Since it’s your birthday, I find it only fitting that you get to make your own digital birthday cake. Start by making your cake mixture, then bake it in a digital oven and finally decorate. Have fun and happy birthday baby 😺💓"
+    "Since it’s your birthday, I find it only fitting that you get to make your birthday cake. Start by making your cake mixture, then bake it in a oven and finally decorate. Have fun and happy birthday baby 😺💓"
   );
 });
 
@@ -49,13 +49,13 @@ $(".mixer").click(function () {
     fire_modal(
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mix_modal.png",
       "Mix successful!",
-      "Congratulations, the mixture is perfect! After pouring the mixture into a baking tin, it’s now time to put it in our digital oven for about 3 seconds. That should be enough time for a nice spongy base."
+      "Congratulations, the mixture is perfect! After pouring the mixture into a baking tin, it’s now time to put it in our oven for about few seconds. That should be enough time for a nice spongy base."
     );
   }
 });
 
 $(".tin").draggable({
-  revert: true
+  revert: true,
 });
 $(".oven").droppable({
   drop: function (event, ui) {
@@ -65,7 +65,7 @@ $(".oven").droppable({
       "Bake successfull!",
       "Yes! You are a master chef. The base is fully baked and looks super yummy. Now its time to combine this base with lots of other ingredients like jam, marmalade, chocolate and more."
     );
-  }
+  },
 });
 
 bases = 0;

@@ -107,7 +107,8 @@ body .birthday_inner__stage h1 {
 }
 body .birthday_inner__stage h2 {
   font-family: "poppins";
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 15px;
   color: #b9918e;
   line-height: 18px;
   margin: 0;
@@ -128,6 +129,9 @@ body .birthday_inner__stage .mix .move {
   -webkit-animation: mix 1s 0s linear;
   animation: mix 1s 0s linear;
 }
+img {
+  pointer-events: none;
+}
 body .birthday_inner__stage img.intro {
   width: 300px;
   transform: scale(0);
@@ -135,6 +139,7 @@ body .birthday_inner__stage img.intro {
   animation: bounce 0.6s 1s forwards, moveup 0.6s 2s forwards;
   position: relative;
   top: 0px;
+  pointer-events: none;
 }
 body .birthday_inner__stage .oven {
   margin-top: 50px;
@@ -576,4 +581,3 @@ line {
   z-index: 1;
   opacity: 1;
 }
-
